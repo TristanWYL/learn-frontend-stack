@@ -1,0 +1,168 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.divider {
+    background-color: #aaa;
+    height: 2px;
+    margin: 5px 15px;
+
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 5px;
+    padding: 10px;
+}
+
+.video {
+    padding: 5px;
+}
+
+div.thumbnail {
+    position: relative;
+}
+
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 130px;
+    background-color: #aaa;
+}
+
+.duration {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+}
+
+.id-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.video-info {
+    display: flex;
+    padding-top: 10px;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+.video-title {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+}
+
+.video-channel-name {
+    text-decoration: none;
+    font-size: small;
+    color: #666;
+    padding: .2rem 0;
+}
+
+.video-metadata {
+    color: #666;
+    font-size: smaller;
+}
+
+.categories {
+    padding: 10px 40px;
+    margin-bottom: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.category {
+    border-radius: 100px;
+    margin-left: 10px;
+    /* word-wrap: none; */
+    white-space: nowrap;
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+}
+
+.category:hover {
+    border: 1px solid #ddd;
+    background-color: #666;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.logo {
+    height: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: auto 40px;
+}
+
+.microphone {
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.microphone:hover {
+    background-color: #aaa;
+}
+
+.search-box {
+    /* height: 30px; */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+    min-width: 100px;
+}
+
+.search-button {
+    border: 1px solid #888;
+    border-left: none;
+    padding: 4.5px 15px;
+}
+
+.search-button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu img {
+    margin-left: 6px;
+}
+
+.account {
+    border-radius: 50%;
+    width: 35px;
+}
