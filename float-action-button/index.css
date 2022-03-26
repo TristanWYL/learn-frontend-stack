@@ -1,0 +1,111 @@
+.fab {
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  overflow: visible;
+  width: 70px;
+  height: 70px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 250px;
+  height: 70px;
+}
+
+.btn-large {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 100%;
+  transition: all 0.5s;
+  margin: 10px;
+}
+
+.btn-large:before, .btn-large:after{
+  transition: transform 0.5s, opacity 0.5s;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.64rem;
+  height: 2px;
+  background: white;
+  margin-top: -2px;
+  margin-left: -0.82rem;
+  transform: rotate(0);
+  opacity: 0;
+}
+
+.fab.active .btn-large:before {
+  opacity: 1;
+  transform: rotate(135deg);
+  transition: all 0.5s;
+}
+
+.fab.active .btn-large:after {
+  opacity: 1;
+  transform: rotate(405deg);
+  transition: all 0.5s;
+}
+
+.btn-large img {
+  width: 60%;
+  height: 60%;
+  margin: 10px auto;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+.fab.active .btn-large img{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin-block: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline: 0;
+  height: 40px;
+}
+
+li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  border-radius: 100%;
+  position: relative;
+  transition: transform 0.5s;
+  opacity: 0;
+  transform: scale(0.2) rotate(180deg);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.fab.active li {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+li img {
+  height:60%;
+  width:60%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

@@ -6,4 +6,5 @@ Application list:
 - [x] [step on the black blocks](step-on-black/README.md)
 - [x] [carousel](carousel/README.md)
 - [x] [YouTube clone](clone-youtube/README.md)
+- [x] [Float action button](float-action-button/README.md)
 - [ ] more will come soon
