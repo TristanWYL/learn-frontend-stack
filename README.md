@@ -1,6 +1,6 @@
 # Overview
 
-A set of simple web applications for demostrating how to use html/css/js without any external dependenciew.
+A set of simple web pages for demostrating how to use html/css/js without any external dependencies.
 
 Application list:
 - [x] [step on the black blocks](step-on-black/README.md)
