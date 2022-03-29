@@ -1,6 +1,6 @@
 # Overview
 
-A set of simple web pages for demostrating how to use html/css/js without any external dependencies.
+A set of simple web pages for demostrating how to use html/css/js without using any external dependencies.
 
 Application list:
 - [x] [step on the black blocks](step-on-black/README.md)
@@ -8,8 +8,6 @@ Application list:
 - [x] [YouTube clone](clone-youtube/README.md)
 - [x] [Float action button](float-action-button/README.md)
 - [ ] more will come soon
-<<<<<<< Updated upstream
-=======
 
 # Some Demos
 
@@ -28,4 +26,3 @@ Application list:
 - [Float action button](float-action-button/README.md)
 
   <img src="float-action-button/demo.gif" alt="demo" width="600"/>
->>>>>>> Stashed changes
