@@ -3,6 +3,7 @@
 A set of simple web pages for demostrating how to use html/css/js without using any external dependencies.
 
 Application list:
+- [x] [Parallax scrolling](parallax-scrolling/README.md)
 - [x] [Animated loading](loading-animation/README.md)
 - [x] [Animated cards](animated-card/README.md)
 - [x] [Step on the black blocks](step-on-black/README.md)
@@ -12,6 +13,10 @@ Application list:
 - [ ] more will come soon
 
 # Some Demos
+
+- [Parallax scrolling](parallax-scrolling/README.md)
+
+  <img src="parallax-scrolling/demo.gif" alt="demo" width="600"/>
 
 - [Animated loading](loading-animation/README.md)
 

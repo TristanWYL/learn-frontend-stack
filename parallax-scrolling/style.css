@@ -1,0 +1,63 @@
+body {
+  background-color: #124;
+}
+.splash {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  background:linear-gradient(to top, #124, transparent);
+}
+
+.splash::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #124;
+  mix-blend-mode: color;
+}
+
+.title {
+  color: #fff;
+  position: relative;
+  font-size: 3rem;
+  z-index: 15;
+  font-weight: bolder;
+}
+
+.mountain {
+  z-index: 11;
+}
+
+.road {
+  z-index: 17;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  color: #fff;
+  line-height: 1.3em;
+  padding: 40px;
+}
