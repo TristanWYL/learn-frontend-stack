@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex wrap</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        padding-top: 15px;
+      }
+      .box {
+        width: 600px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .box > * {
+        border: 1px dashed green;
+        height: 100px;
+      }
+      .width > * {
+        width: 50%;
+      }
+      .width > *:last-child {
+        width: 100%;
+      }
+      .flex-basis > * {
+        flex: 1 1 34%;
+        text-align: center;
+      }
+      .gap > * {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Set width as percentage</p>
+    <div class="box width">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+    </div>
+    <p>Apply properties of flex items</p>
+    <div class="box flex-basis">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+    </div>
+    <p>Set width as percentage with gap</p>
+    <div class="box width gap">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+    </div>
+    <p>Apply properties of flex items with gap</p>
+    <div class="box flex-basis gap">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+    </div>
+  </body>
+</html>
